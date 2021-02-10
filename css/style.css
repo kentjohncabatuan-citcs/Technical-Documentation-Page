@@ -1,0 +1,60 @@
+html{ scroll-behavior: smooth; }
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.nav-link{
+  padding: 6px 6px 6px 32px !important;
+}
+.sidenav a {
+  transition: transform .2s;
+  text-decoration: none;
+  display: block;
+}
+
+.sidenav a:hover {
+  -ms-transform: scale(1.08); /* IE 9 */
+  -webkit-transform: scale(1.08); /* Safari 3-8 */
+  transform: scale(1.08); 
+}
+.main-section{
+  margin-bottom: 30px;
+}
+.main {
+  margin-left: 300px; /* Same as the width of the sidenav */
+}
+.ul-margin{margin-top: -40px;}
+.code-container{
+  padding: 30px;
+  background-color: #E4E8EF;
+}
+p{
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+#table-of-content{
+  font-weight: 500;
+  font-size: 18pt;
+}
+#main-doc{
+  color: #00053D;
+}
+#navbar-mobile{display: none;}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a  {font-size: 18px;}
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar{display: none;}
+  #navbar-mobile{display: block;}
+  .main{margin: 0;}
+  #main-doc{margin-top: 100px}
+}
